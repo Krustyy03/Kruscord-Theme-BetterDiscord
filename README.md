@@ -6,5 +6,6 @@
   </p>
 </div>
 
-#Installation
-Place Minitle.theme.css in `C:\Users\(user)\AppData\Roaming\BetterDiscord\themes`
+## Installation
+* Place Minitle.theme.css in `C:\Users\(user)\AppData\Roaming\BetterDiscord\themes`
+* Enable it in BetterDiscord themes settings.
