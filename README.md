@@ -15,6 +15,9 @@
 * Better 'Jump to present' button for when you wander off into the past.
 * Many more visual changes that make Discord alive.
 
+## Screenshots
+![Server Page](https://i.imgur.com/u3KPR6a.png)
+
 ## Installation
 * Download Kruscord theme zip file.
 * Place Kruscord.theme.css in `C:\Users\(user)\AppData\Roaming\BetterDiscord\themes`
