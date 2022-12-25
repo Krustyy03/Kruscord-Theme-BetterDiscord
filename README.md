@@ -8,6 +8,8 @@
 </div>
 
 ## Features
+* Subtle recolor to keep your eyes happy.
+* 
 
 ## Installation
 * Place Minitle.theme.css in `C:\Users\(user)\AppData\Roaming\BetterDiscord\themes`
