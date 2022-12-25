@@ -1,12 +1,28 @@
 /**
- * @name Minitle
- * @author Krustyy#7558
- * @description A theme that makes discord cool without modifying it too much
+ * @name Kruscord
+ * @author Krustyy | Krustyy#7558
  * @version 0.0.1
+ * @description My custom theme.
 */
 
+/*Imports*/
 @import url("https://stickfab.github.io/pc-fluenticons/FluentIcons.css");
+@import url(https://neodymium7.github.io/BetterDiscordStuff/CSS/AddServerDarkMode.css);
+@import url(https://dablulite.github.io/redesigneduserareas/import.css);
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/NormalizedForums.css);
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source Code Pro:wght@550&display=swap");
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css");
+
+/*floating user panel*/
+.panels-3wFtMD {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  border: 1px solid var(--background-secondary);
+  border-radius: 10px;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.45);
+}
 
 /*Change light mode colors*/
 .theme-light 
@@ -37,43 +53,53 @@
     --channeltextarea-background: rgb(40,40,40);
 }
 
+/*Fonts*/
+::placeholder,
+body,
+button,
+input,
+select,
+textarea {
+    font-family: "Lato";
+}
 
-/*For channel tabs*/ /*Uncomment if you have channeltabs plugin/*
-/*.wordmark-2u86JB {
-display: none;
+.codeBlockText-28BOxV,
+code {
+    font-family: "Source Code Pro";
 }
-#channelTabs-container{
--webkit-app-region: drag;
-width: calc(100vw - 100px);
+
+
+/*Role tag color*/
+:root{
+  --roles-roundness: 0; /* change the 0 to any other number if you want the roles to be fully round */
+
+  --roles-roundness-calc: calc((var(--roles-roundness) + .21) * 25px)
 }
-.titleBar-1it3bQ {
--webkit-app-region: drag;
-position: fixed;
-top: 0;
-right: 0;
-z-index: 4000;
-height: calc(var(--channelTabs-tabHeight) + 4px);
+.role-2TIOKu {
+  transform: translate(0);
+  border: 0;
+  border-radius: var(--roles-roundness-calc);
 }
-.channelTabs-tabNav, .channelTabs-tab, .channelTabs-newTab, #channelTabs-settingsMenu {
--webkit-app-region: no-drag;
+.role-2TIOKu .roleRemoveIcon-387wKV {
+  margin: 0;
+  left: unset;
+  transform: translate(50%,-50%);
 }
-#channelTabs-settingsMenu {
-margin-right: 84px;
-top: 0;
-height: 22px !important;
-width: 28px !important;
+.role-2TIOKu .roleRemoveButton-17oXnT{position: static}
+.role-2TIOKu .roleCircle-3K9O3d:before {
+  content: '';
+  top: 0;left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  background: inherit;
+  border-radius: var(--roles-roundness-calc);
+  border: 2px solid transparent;
+  -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
 }
-.channelTabs-settingsIcon {
-max-height: 10px !important;
-max-width: 10px !important;
-}
-.channelTabs-tabContainer {
-width: calc(100% - 28px);
-}
-.channelTabs-favContainer {
--webkit-app-region: no-drag;
-width: calc(100vw - 16px);
-}*/ 
 
 /*Rounded chatbox*/
 .scrollableContainer-15eg7h 
@@ -87,17 +113,21 @@ width: calc(100vw - 16px);
 }
 
 /*Make chatbox transparent*/
-.scroller-kQBbkU {
-    margin-bottom: -60px;
-    padding-bottom: 50px;
+.scroller-kQBbkU 
+{
+    margin-bottom: -50px;
+    padding-bottom: 40px;
 }
 
-.form-3gdLxP:before {
+.form-3gdLxP:before 
+{
     display: none;
 }
 
-.channelTextArea-1FufC0 {
+.channelTextArea-1FufC0
+{
     background: transparent !important;
+    margin-bottom: 22px;
 }
 
 /*Blur messagebox*/
@@ -111,11 +141,12 @@ width: calc(100vw - 16px);
     filter: drop-shadow(0rem 0rem 0.5rem rgba(0, 0, 20, 0.2));
 }
 
-/*MACOS like caption buttons*/
+/*Mac title bar buttons*/
 .winButton-3UMjdg{
-    width:14px;
-    height:14px;
+    width:13px;
+    height:13px;
     margin:4px;
+    margin-top: 7px;
     border-radius:11px;
     position:relative;
     transition:background-color ease-in-out .1s;
@@ -123,8 +154,8 @@ width: calc(100vw - 16px);
 }
 .winButton-3UMjdg::after{
     content:"";
-    width:14px;
-    height:14px;
+    width:15px;
+    height:15px;
     display:block;
     position:fixed;
     opacity:0;
@@ -139,6 +170,7 @@ width: calc(100vw - 16px);
 }
 .winButton-3UMjdg:nth-child(4){
     background-color:#fac536;
+    margin-left: 4px;
 }
 .winButton-3UMjdg:nth-child(4)::after{
     -webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Crect ry='1' y='6' x='3' height='2' width='8'/%3E%3C/svg%3E");
@@ -152,6 +184,7 @@ width: calc(100vw - 16px);
 }
 .winButton-3UMjdg:nth-child(3){
     background-color:#39ea49;
+    margin-left:4px;
 }.winButton-3UMjdg:nth-child(3)::after{
     -webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Cpath fill='%231D7525' d='M5.414 3.862L10 8.448V4.862c0-.415-.585-1-1-1zM4 5.276v3.586c0 .416.585 1 1 1h3.586z'/%3E%3C/svg%3E");
     background-color:#1d7525;
@@ -164,6 +197,7 @@ width: calc(100vw - 16px);
 }
 .winButton-3UMjdg:nth-child(2){
     background-color:#f25056;
+    margin-left:4px;
 }
 .winButton-3UMjdg:nth-child(2)::after{
     -webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Cpath fill='%2379282B' d='M4.172 4.034a.998.998 0 000 1.414l1.414 1.414-1.414 1.414a.998.998 0 000 1.415.998.998 0 001.414 0L7 8.276l1.414 1.415a.998.998 0 001.414 0 .998.998 0 000-1.415L8.414 6.862l1.414-1.414a.998.998 0 000-1.414.998.998 0 00-1.414 0L7 5.448 5.586 4.034a.998.998 0 00-1.414 0z'/%3E%3C/svg%3E");
@@ -174,20 +208,132 @@ width: calc(100vw - 16px);
 }.winButton-3UMjdg:nth-child(2):focus::after{
     background-color:#6b141b;
 }
+/*put title bar buttons on left side*/
+.typeWindows-2-g3UY {
+    position: fixed;
+    z-index: 4000;
+    margin-top: 7px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    background-color: transparent;
+}
+.platform-win .closeButton-30b1gR {
+    width: 100% !important;
+    -webkit-app-region: drag;
+}
+.platform-win .container-ZMc96U {
+    width: 100% !important;
+    -webkit-app-region: drag;
+}
+.platform-win .title-31SJ6t {
+    width: 100% !important;
+    -webkit-app-region: drag;
+}
+.wordmark-2u86JB {
+    display: none;
+    padding-top: 6px;
+    padding-left: calc(100vw - 65px);
+}
+.winButton-3UMjdg:nth-child(2){
+    order:3;
+}
+.winButton-3UMjdg:nth-child(4){
+    order:1;
+}
 
-/*Smooth edges of spotify album cover in profile*/
+/*server discovery buttons always visible*/
+.scroller-3X7KbA {
+contain: unset;
+padding-bottom: 57px;
+}
+.scroller-3X7KbA::before {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  width: 72px;
+  height: 70px;
+  background: linear-gradient(transparent, var(--background-tertiary) 15%);
+  z-index: 1;
+}
+.tutorialContainer-2jwoiB {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+.tutorialContainer-2jwoiB {
+  position: fixed;
+  bottom: 0px;
+  contain: none;
+  z-index: 1;
+}
+
+/*home button always visible*/
+[aria-label="Boost this server"] {display: none;}
+
+.guilds-2JjMmN .tree-3agP2X:focus {
+outline-color: transparent;
+}
+.guilds-2JjMmN .scroller-3X7KbA {
+contain: unset;
+margin-top: 83px;
+}
+.guilds-2JjMmN .scroller-3X7KbA .tutorialContainer-1pL9QS {
+position: fixed;
+transform: translatey( -100% );
+}
+
+/*home icon spin on click*/
+@keyframes spin {
+0% {
+    transform: rotate(0deg);
+}
+20% {
+    transform: rotate(-20deg);
+}
+70% {
+    transform: rotate(380deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+
+.pill-L_aLMQ.bd-selected + .listItemWrapper-3d87LP .homeIcon-r0w4ny {
+animation: spin 0.8s ease;
+}
+
+/*spotify album cover*/
 .assetsLargeImageSpotify-17ME3M{
     border-radius:8px
 }
 
-/*Emoji menu animation*/
+/*emoji autofill menu hover animation*/
 .base-2v-uc0 {
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 .base-2v-uc0:hover {
-    transition: all 0.3s;
+    transition: all 0.2s;
     transform: scale(1.015);
 }
+
+/* Messages Slide In Chat */
+@keyframes slide-up {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+.message-2CShn3 {
+animation: slide-up 0.4s ease;
+}
+
 
 /*Jump to present button*/
 [class*="jumpToPresentBar"] {
@@ -267,18 +413,9 @@ background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy5
 padding-left: 35px !important;
 }
 
-/*Sounds control animation*/
-.container-YkUktl .flex-2S1XBF > :not(:last-child) {
-opacity: 0% !important;
-width: 32px;
-transition: all 0.2s ease-in-out;
-}
-.container-YkUktl:hover .flex-2S1XBF > :not(:last-child) {
-opacity: 100% !important;
-width: 32px;
-}
-
-/*Status settings popout*/
+/*Status popout*/
 .submenu-1apzyU {
 width: 220px;
 }
+
+
