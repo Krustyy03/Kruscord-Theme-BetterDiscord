@@ -1,8 +1,9 @@
 <div align="center">
-  <h3 align="center">Minitle</h3>
+  <h3 align="center">Kruscord</h3>
 
   <p align="center">
-    Subtle changes that make your discord minimally cool while keeping it recognisable.
+    Want to make your Discord beautiful and fun to use while keeping it like Discord? Well, this is the perfect theme for you!
+    Kruscord contains features you'll love while keeping the original look of Discord so you know what app you're using.
   </p>
 </div>
 
@@ -11,6 +12,6 @@
 * Enable it in BetterDiscord themes settings.
 
 ## Credits
-I do not own the following features. All credit goes to their respective owners.
+I have not created the following features. Complete credit goes to their respective owners.
 * stickfab#0985 for FluentIcons.
 * mwittrien for SettingsModal
