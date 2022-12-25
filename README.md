@@ -16,7 +16,7 @@
 * Many more visual changes that make Discord alive.
 
 ## Screenshots
-![Server Page]([https://i.imgur.com/u3KPR6a.png](https://i.imgur.com/RTMsAu0.png))
+![Server Page](https://i.imgur.com/RTMsAu0.png)
 
 ## Installation
 * Download Kruscord theme zip file.
