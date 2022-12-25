@@ -22,8 +22,7 @@
 
 ## Known Issues
 <p align="left"> It's always better to be aware of the bugs beforehand rather than coming across them in an experience disrupting manner.</p>
-* Modal notifications (like BDFDB plugin updates) are not functinal. This is due to the title bar modifications.
-Fix: Theme must be disabled in order to interact with these modals.
+* Modal notifications (like BDFDB plugin updates) are not functinal. This is due to the title bar modifications. Fix: Theme must be disabled in order to interact with these modals.
 * Please inform me if you come across any bugs: Krustyy#3022
 
 ## Credits
