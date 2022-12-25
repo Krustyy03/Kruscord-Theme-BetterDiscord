@@ -8,12 +8,23 @@
 </div>
 
 ## Features
-* Subtle recolor to keep your eyes happy.
-* 
+* Subtle recolor to keep it easy on your eyes.
+* How cool are those previews of themes with MacOS title bar buttons, too bad they're not present in the theme. Wait- In Kruscord they are!!
+* 'Add Server' button always visible to make joining new servers quick.
+* New messages appear with a smooth animation.
+* Better 'Jump to present' button for when you wander off into the past.
+* Many more visual changes that make Discord alive.
 
 ## Installation
-* Place Minitle.theme.css in `C:\Users\(user)\AppData\Roaming\BetterDiscord\themes`
+* Download Kruscord theme zip file.
+* Place Kruscord.theme.css in `C:\Users\(user)\AppData\Roaming\BetterDiscord\themes`
 * Enable it in BetterDiscord themes settings.
+
+## Known Issues
+<p align="left"> It's always better to be aware of the bugs beforehand rather than coming across them in an experience disrupting manner.</p>
+* Modal notifications (like BDFDB plugin updates) are not functinal. This is due to the title bar modifications.
+Fix: Theme must be disabled in order to interact with these modals.
+* Please inform me if you come across any bugs: Krustyy#3022
 
 ## Credits
 I have not created the following features. Complete credit goes to their respective owners.
