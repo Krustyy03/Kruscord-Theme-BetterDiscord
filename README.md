@@ -22,7 +22,7 @@
 
 ## Installation
 * Download Kruscord theme zip file.
-* Place Kruscord.theme.css in `C:\Users\(user)\AppData\Roaming\BetterDiscord\themes`
+* Place Kruscord.theme.css in `%appdata%\Roaming\BetterDiscord\themes`
 * Enable it in BetterDiscord themes settings.
 
 ## Known Issues
