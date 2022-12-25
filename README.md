@@ -21,7 +21,8 @@
 ![Profile Modal](https://i.imgur.com/wpQUpKO.png)
 
 ## Installation
-* Download Kruscord theme zip file. ![Download ZIP](https://i.imgur.com/KAVXU9M.png)
+![Download ZIP](https://i.imgur.com/KAVXU9M.png)
+* Download Kruscord theme zip file.
 * Place Kruscord.theme.css in `%appdata%\Roaming\BetterDiscord\themes`
 * Enable it in BetterDiscord themes settings.
 
