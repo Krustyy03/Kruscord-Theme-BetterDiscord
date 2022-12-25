@@ -31,7 +31,8 @@
     --channels-default: #303030;
     --text-muted: #494949;
     --interactive-muted: #a0a0a0;
-    --background-primary: rgb(196, 196, 196);
+    --background-primary: rgb(211, 211, 208);
+    --background-secondary: rgb(228, 228, 228);
 }
 
 /*Change dark mode colors */
