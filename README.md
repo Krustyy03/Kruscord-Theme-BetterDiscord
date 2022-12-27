@@ -33,4 +33,3 @@ Fix: Theme must be disabled in order to interact with these modals.
 ## Credits
 I have not created the following features. Complete credit goes to their respective owners.
 * stickfab#0985 for FluentIcons.
-* mwittrien for SettingsModal
